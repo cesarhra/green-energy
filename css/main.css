@@ -1,0 +1,513 @@
+/*FONTS*/
+
+@font-face {
+	font-family: 'rufinabold';
+	src: url('rufina-bold-webfont.woff2') format('woff2'), url('rufina-bold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'rufinaregular';
+	src: url('rufina-regular-webfont.woff2') format('woff2'), url('rufina-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'sintonybold';
+	src: url('sintony-bold-webfont.woff2') format('woff2'), url('sintony-bold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'sintonyregular';
+	src: url('sintony-regular-webfont.woff2') format('woff2'), url('sintony-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+/*COLORS*/
+
+
+/*
+Analogous colors created in Adobe Color CC
+
+#DBFFAC
+#FFFAF8
+#E8D497
+#97E8C7
+#6AA6FF
+
+https://color.adobe.com/create/color-wheel/?base=2&rule=Analogous&selected=4&name=My%20Color%20Theme&mode=rgb&rgbvalues=0.415686274509804,0.6523492254648078,1,0.592156862745098,0.9098039215686274,0.7796407037467958,0.8588235294117647,1,0.6745098039215687,0.9098039215686274,0.8308600432011654,0.592156862745098,1,0.9803921568627451,0.9725490196078431&swatchOrder=0,1,2,3,4
+*/
+
+
+/*BODY*/
+
+* {
+	box-sizing: border-box;
+}
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+body {
+	background-color: #FFFAF8;
+	font-family: 'sintony', sans-serif, Helvetica, sans-serif;
+	font-size: 0.618rem;
+	line-height: 1.6;
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	margin: 0 auto;
+}
+
+header,
+main {
+	width: 90%;
+	max-width: 100rem;
+	margin: 0 5%;
+}
+
+.header {
+	margin-bottom: 0.5rem;
+}
+
+.logo-name img {
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto 0 90%;
+}
+
+.logo-name {
+	float: left;
+	width: 35%;
+}
+
+.name h1 {
+	font-family: 'condiment', cursive, Helvetica, sans-serif;
+	width: 30%;
+	margin: 0 28% 0 auto;
+}
+
+.name {
+	float: left;
+	width: 48%;
+}
+
+
+/*NAVIGATION*/
+
+.menu {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+.nav-bg .content-box {
+	margin: 0;
+}
+
+.menu li a {
+	display: block;
+	background-color: #E8D497;
+	color: #FFFAF8;
+	text-decoration: none;
+	padding: 0.5rem 1rem;
+	margin: 0 0 1px 0;
+}
+
+.menu li a:hover {
+	background-color: #97E8C7;
+	color: #6AA6FF;
+}
+
+.menu li:last-child a {
+	margin-bottom: 1rem;
+}
+
+
+/*MASTHEAD SLIDER*/
+
+.masthead {
+	background-color: #97E8C7;
+}
+
+.mh-image {
+	transition: opacity 1s ease-out;
+	min-height: 10rem;
+}
+
+.mh-image img {
+	max-width: 100%;
+	height: auto;
+}
+
+.picture {
+	position: relative;
+	max-width: 100%;
+	margin: 0;
+}
+
+.picture img {
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+}
+
+.leg,
+.leg1 {
+	font-family: 'rufinabold', serif, Times News Roman;
+	font-size: 0.8rem;
+	color: #FFFAF8;
+	text-shadow: 1px 1px #E8D497;
+	position: absolute;
+	top: 85%;
+	left: 7%;
+}
+
+
+/*MAIN*/
+
+main {
+	background-color: #DBFFAC;
+	padding: 5px;
+}
+
+main h1 {
+	font-family: 'rufinabold', serif, Times News Roman;
+	text-align: center;
+	color: #6AA6FF;
+	font-size: 0.618rem;
+}
+
+.container {
+	height: auto;
+}
+
+.container figure {
+	margin: 0;
+}
+
+.icons {
+	display: table;
+	margin: 0 auto;
+}
+
+.icons ul {
+	list-style: none;
+	padding: 0;
+	width: 100%;
+}
+
+.icons ul li{
+	display: inline;
+}
+
+span a:link,
+span a:visited {
+	color: #000;
+	text-decoration: none;
+}
+
+span a:hover {
+	text-decoration: underline;
+}
+
+button {
+	background: none;
+	border: none;
+}
+
+.font .one {
+	font-size: 0;
+	color: #6AA6FF;
+}
+
+.font .one:before {
+	font-family: FontAwesome;
+	font-size: 2rem;
+	display: inline-block;
+	content: "\f140";
+}
+
+.font .one:hover {
+	color: #E8D497;
+}
+
+.container figcaption {
+	color: #6AA6FF;
+}
+
+.main-content {
+	max-width: 100%;
+	height: auto;
+	background-color: #FFFAF8;
+}
+
+.text {
+	max-width: 100%;
+}
+
+
+/*FOOTER*/
+
+footer {
+	background-color: #E8D497;
+	color: #6AA6FF;
+}
+
+.content-box ul {
+	list-style: none;
+}
+
+.content-box {
+	text-align: center;
+}
+
+.social ul li {
+	display: inline-block;
+}
+
+.social ul li a:link {
+	color: #6AA6FF;
+}
+
+.social ul li a:visited {
+	color: #6AA6FF;
+}
+
+.social ul li a:hover {
+	color: #FFFAF8;
+}
+
+.social ul li a {
+	font-size: 1.5rem;
+	padding: 0.5rem 0.5rem;
+	margin: 0 0 1px 0;
+}
+
+.social ul,
+.institucional ul {
+	padding: 0;
+}
+
+
+/*TABLET*/
+
+@media all and (min-width: 35rem) and (max-width: 60rem) {
+	
+	/*	BODY*/
+	
+	body {
+		font-size: 1rem;
+	}
+	
+	h1 {
+		font-size: 1rem;
+	}
+	
+	/*	NAVIGATION*/
+	
+	.menu {
+		margin: 0 auto 0.5rem 0;
+	}
+	
+	.menu li a {
+		width: calc(33.33% - 10px + 3px);
+		float: left;
+		margin: 0 10px 0 0;
+		text-align: center;
+	}
+	
+	nav .menu li:last-child a {
+		margin: 0;
+	}
+	
+	/*	SLIDER*/
+	
+	.mh-image {
+		position: relative;
+		overflow: hidden;
+	}
+	
+	.leg,
+	.leg1 {
+		top: 85%;
+		left: 10%;
+		font-size: 1rem;
+	}
+	
+	/*	MAIN*/
+	
+	.icons ul {
+		width: 100%;
+		margin: 0 auto;
+	}
+	
+	button {
+		margin: 0 2rem 1rem 2rem;
+	}
+	
+	.main-content {
+		width: 50%;
+		float: left;
+	}
+	
+	.text {
+		width: 50%;
+		float: right;
+		padding-left: 1rem;
+	}
+	
+	main h1 {
+		font-size: 1rem;
+	}
+}
+
+
+/*DESKTOP*/
+
+@media all and (min-width: 60rem) {
+	
+	/*	BODY*/
+	
+	body {
+		font-size: 1.618rem;
+	}
+	
+	header,
+	main {
+		width: 75%;
+		margin: 0 12.5%;
+	}
+	
+	/*	HEADER*/
+	
+	.header {
+		text-align: left;
+	}
+	
+	.logo-name img {
+		width: 100%;
+		margin: 0 auto 0 0;
+	}
+	
+	
+	/*	NAVIGATION*/
+	
+	.menu li a {
+		width: calc(19.33% - 1rem + 0.7rem);
+		float: left;
+		margin: 0 5px 0 0;
+		text-align: center;
+		padding: 2px;
+	}
+	
+	nav ul li:last-child a {
+		margin: 0;
+	}
+	
+	/*	SLIDER*/
+	
+	.picture img {
+		width: 75%;
+		display: block;
+		margin: 0 auto;
+	}
+	
+	.leg {
+		top: 7%;
+		left: 16%;
+		font-size: 1.618rem;
+	}
+	.leg1 {
+		top: 80%;
+		left: 16%;
+		font-size: 1.618rem;
+	}
+	
+	/*	MAIN*/
+	
+	main {
+		margin-bottom: 1rem;
+	}
+	
+	.main-content {
+		width: 50%;
+		float: left;
+	}
+	
+	main h1 {
+		text-align: left;
+		font-size: 1.618rem;
+	}
+	
+	.icons ul li {
+		display: block;
+	}
+	
+	.icons ul {
+		margin-left: 0;
+	}
+	
+	.icons {
+		float: left;
+	}
+	
+	.container {
+		max-width: 86%;
+		float: right;
+	}
+	
+	.main-content {
+		width: 30%;
+		float: left;
+		border-radius: 10px 0 0 0;
+		margin-left: -4rem;
+	}
+	
+	.text {
+		width: 75%;
+		float: right;
+		padding-left: 0;
+	}
+	
+	/*	FOOTER*/
+	
+	.content-box {
+		max-width: 75%;
+		margin: 0 auto;
+		text-align: left;
+	}
+	
+	.social {
+		float: left;
+	}
+	
+	.social ul {
+		margin-top: 1.1rem;;
+	}
+	
+	.social ul li a {
+		font-size: 1.8rem;
+	}
+	
+	.institucional {
+		float: left;
+		margin-left: 1.5rem;
+	}
+	
+	.institucional ul {
+		margin-top: 0;
+	}
+}
